@@ -16,7 +16,7 @@ const HeroSection = () => {
                   Phasellus aliquam fermentum ultricies. 
                 </p>
                 <div>
-                    <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-red-700 hover:bg-slate-200 text-black">
+                    <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-red-800 via-red-500 to-pink-800 hover:bg-slate-200 text-white">
                         Entre em Contato
                     </button>
                     <button className="px-6 py-3 w-full sm:w-fit rounded-full bg-transparent hover:bg-slate-800 text-white border border-white mt-3">
