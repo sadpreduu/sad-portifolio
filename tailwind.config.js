@@ -10,7 +10,6 @@ module.exports = {
       fontFamily: {
         RubikScribble: ["Rubik Scribble", "Static"]
       },
-        AtonFont: ["Aton", "Static"],
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
