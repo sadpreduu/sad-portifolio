@@ -21,8 +21,8 @@ const navLinks = [
 
 const Navbar = () => {
   return (
-    <nav>
-        <div className="flex flex-wrap items-centefr justify-between mx-auto p-8">
+    <nav className="fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-90">
+        <div className="flex flex-wrap items-centefr justify-between mx-auto px-4">
            <Link href={"/"} className="text-2xl md:text-5xl text-white font-semibold self-center h-3">
             PEDRO CARVALHO
            </Link>
