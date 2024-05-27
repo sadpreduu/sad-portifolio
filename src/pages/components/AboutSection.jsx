@@ -9,7 +9,14 @@ const TAB_DATA = [{
   id: "habilidades",
   content: (
     <ul className='list-disc pl-2'>
-      <li>Lista 1</li>
+      <li>ReactJs/NextJs</li>
+      <li>Springboot/Java/Kotlin</li>
+      <li>Python/Flask/FastAPI/PyTorch</li>
+      <li>Docker/Kubernetes</li>
+      <li>OCI/AWS/AzureCloud</li>
+      <li>Git/Github</li>
+      <li>Electron.Js</li>
+      <li>.Net/C#</li>
     </ul>
   ),
 }, 
@@ -18,7 +25,8 @@ const TAB_DATA = [{
   id: "educacao",
   content: (
     <ul className='list-disc pl-2'>
-      <li>Lista 2</li>
+      <li>Centro Universitario IBMR</li>
+      <li>DIO</li>
     </ul>
   ),
 },
@@ -27,7 +35,8 @@ title: "Experiência",
 id: "experiencia",
 content: (
   <ul className='list-disc pl-2'>
-    <li>Lista 3</li>
+    <li>Freelancer(2019 - 2020)</li>
+    <li>CDA Distribuidora(2022 - 2023)</li>
   </ul>
 ),
 },
@@ -36,7 +45,10 @@ title: "Certificados",
 id: "certificados",
 content: (
   <ul className='list-disc pl-2'>
-    <li>Lista 4</li>
+    <li>CS50, Harvard</li>
+    <li>Git Github, Udemy</li>
+    <li>Docker Especialista, Udemy</li>
+    <li>Controle de Versão, DIO</li>
   </ul>
 ),
 },
@@ -45,7 +57,7 @@ content: (
 
 const AboutSection = () => {
 
-  const [tab, setTab] = useState("skills");
+  const [tab, setTab] = useState("habilidades");
   const [isPending, startTransition] = useTransition();
 
   const handleTabChange = (id) => {
@@ -65,7 +77,7 @@ const AboutSection = () => {
                     com 3 anos de experiência, formado em Análise e Desenvolvimento 
                     de Sistemas e certificado pela CS50 em Harvard.
                     </p>
-                    <div className="flex flex-row mt-8">
+                    <div className="flex flex-row justify-start mt-8">
                         <TabButtons 
                         selectTab={() => 
                         handleTabChange("habilidades")} 
@@ -100,7 +112,7 @@ const AboutSection = () => {
                         </TabButtons>
                     </div>
                     <div className='mt-8'>
-                      {TAB_DATA.find((t) => t.id).content}
+                    {TAB_DATA.find((t) => t.id === tab).content}
                     </div>
             </div>
         </div>
