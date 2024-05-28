@@ -11,32 +11,31 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4.1.3
+        with:
+          fetch-depth: 0
 
       - name: Use Node.js 18.x
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v1
         with:
           node-version: "18.x"
 
-      - name: Cache node modules
-        uses: actions/cache@v3
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+      - name: Cleaning dist directory
+        run: sudo rm -rf dist
 
       - name: Installing my packages
         run: npm ci
 
-      - name: Extract repository name
-        run: echo "BASE_PATH=/$(echo $GITHUB_REPOSITORY | cut -d '/' -f 2)" >> $GITHUB_ENV
-
       - name: Build my App
         run: npm run build && touch ./dist/.nojekyll
+
+      - name: Clean up previous deployment
+        run: |
+          git worktree prune
+          rm -rf .git/worktrees/github-pages-deploy-action-temp-deployment-folder/
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.6.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: deploy-testing # The branch the action should deploy to.
-          folder: dist # The folder the action should deploy from.
+          folder: dist # The folder the action should deploy to.
