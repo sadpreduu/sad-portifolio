@@ -1,10 +1,12 @@
+![Hero Screen Shot](public/images/sc-portifolio.png)
+
 # Portfolio Website
 
 This is a portfolio website built with Next.js and Tailwind CSS. 
 
 ## Installation
 
-3. Install the dependencies: `npm install`
+1. Install the dependencies: `npm install`
 
 ## Usage
 
