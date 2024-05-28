@@ -1,12 +1,12 @@
 import Image from "next/image";
-import { Inter } from "next/font/google";
+/* import { Inter } from "next/font/google";*/
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import AboutSection from "./components/AboutSection";
 import ProjectsSection from "./components/ProjectsSection";
 
 
-const inter = Inter({ subsets: ["latin"] });
+/* const inter = Inter({ subsets: ["latin"] }); */
 
 export default function Home() {
   return (
