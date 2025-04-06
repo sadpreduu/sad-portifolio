@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import AboutSection from "./components/AboutSection";
 import ProjectsSection from "./components/ProjectsSection";
 import AchievementsSection from "./components/AchievementsSection";
+import EmailSection from "./components/EmailSection";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -24,6 +25,7 @@ export default function Home() {
         <AchievementsSection/>
         <AboutSection/>
         <ProjectsSection/>
+        <EmailSection/>
       </div>
 
     </main>
