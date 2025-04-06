@@ -16,6 +16,7 @@
     "react-animated-numbers": "^1.0.1",
     "react-dom": "^18",
     "react-type-animation": "^3.2.0",
+    "resend": "^4.2.0",
     "sad-portifolio": "file:"
   },
   "devDependencies": {
