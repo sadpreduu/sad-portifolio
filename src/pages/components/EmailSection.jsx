@@ -54,10 +54,10 @@ const EmailSection = () => {
           Estou sempre aberto a novas oportunidades e colaborações. Se você tem uma ideia, projeto ou apenas quer conversar, não hesite em entrar em contato!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="github.com">
+          <Link href="https://github.com/sadpreduu" target="_blank" rel="noopener noreferrer">
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
-          <Link href="linkedin.com">
+          <Link href="https://linkedin.com/in/pedro-ca" target="_blank" rel="noopener noreferrer">
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
         </div>
@@ -82,7 +82,7 @@ const EmailSection = () => {
                 id="email"
                 required
                 className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="jacob@google.com"
+                placeholder="seuemail@email.com"
               />
             </div>
             <div className="mb-6">
@@ -98,7 +98,7 @@ const EmailSection = () => {
                 id="subject"
                 required
                 className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="Just saying hi"
+                placeholder="Aqui vai o assunto"
               />
             </div>
             <div className="mb-6">
@@ -112,7 +112,7 @@ const EmailSection = () => {
                 name="message"
                 id="message"
                 className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="Let's talk about..."
+                placeholder="Desce a letra!"
               />
             </div>
             <button
