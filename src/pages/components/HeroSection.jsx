@@ -15,11 +15,11 @@ const HeroSection = () => {
                     <br></br>
                     <TypeAnimation
                         sequence={[
-                            'Pedro', 
+                            'Pedro Carvalho', 
                              1000, 
                             'Desenvolvedor',
                              1000, 
-                            'Programador', 
+                            'Arquiteto de Software', 
                              1000,
                              'Estudante', 
                              1000,
@@ -39,14 +39,24 @@ const HeroSection = () => {
                     Você sabia que SAD na verdade quer dizer Software Análise e Desenvolvimento?
                 </p>
                 <div>
-                    <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-red-800 via-red-500 to-pink-600 hover:bg-slate-200 text-white">
-                        Entre em Contato
-                    </button>
-                    <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-red-800 via-red-500 to-pink-600 hover:bg-slate-800 text-white mt-3">
-                        <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                            Download CV
-                        </span>
-                    </button>
+                    <a href="mailto:pedrinhoafonco@gmail.com">
+                        <button className="
+                            px-6 py-3 
+                            w-full 
+                            sm:w-fit 
+                            rounded-full 
+                            mr-4 
+                            bg-gradient-to-br from-red-800 via-red-500 to-pink-600 hover:bg-slate-200 text-white">
+                                Entre em Contato
+                        </button>
+                    </a>
+                    <a href="https://www.linkedin.com/in/pedro-ca" target="_blank" rel="noopener noreferrer">
+                        <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-red-800 via-red-500 to-pink-600 hover:bg-slate-800 text-white mt-3">
+                            <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+                                Perfil Linkedin
+                            </span>
+                        </button>
+                    </a>
                 </div>
                 </div>
                 <div className="col-span-5 place-self-center mt-4 lg:mt-0">
