@@ -34,7 +34,7 @@ const HeroSection = () => {
                   </h1>
                   <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6">
                     Olá, meu nome é Pedro Carvalho. 
-                    Sou desenvolvedor FullStack há 3 anos. 
+                    Sou desenvolvedor FullStack há 5 anos. 
                     Sou entusiasta de jogos e um grande estudante da tecnologia. 
                     Você sabia que SAD na verdade quer dizer Software Análise e Desenvolvimento?
                 </p>
